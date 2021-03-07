@@ -21,6 +21,13 @@ const int relay1 = D6;
 int relayON = LOW;
 int relayOFF = HIGH;
 
+BlynkTimer timer;
+void checkPhysicalButton();
+int relay1State = LOW;
+int pushButton1State = HIGH;
+#define VPIN_BUTTON_1    V12 
+#define PUSH_BUTTON_1     D4 
+
 int Humidity;
 int temperature;
 float output;
