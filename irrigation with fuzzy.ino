@@ -16,6 +16,11 @@ char auth[] = "";
 char ssid[] = "";
 char pass[] = "";
 
+const int relay1 = D5;
+const int relay1 = D6;
+int relayON = LOW;
+int relayOFF = HIGH;
+
 int Humidity;
 int temperature;
 float output;
